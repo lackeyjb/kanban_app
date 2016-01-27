@@ -6,7 +6,9 @@
   "scripts": {
     "build": "webpack",
     "deploy": "gh-pages -d build",
-    "start": "webpack-dev-server",
+    "electron": "electron main.js",
+    "start": "NODE_ENV=development electron main.js",
+    "watch": "webpack-dev-server",
     "stats": "webpack --profile --json > stats.json"
   },
   "keywords": [
@@ -24,6 +26,7 @@
     "babel-preset-survivejs-kanban": "^0.2.1",
     "clean-webpack-plugin": "^0.1.6",
     "css-loader": "^0.23.1",
+    "electron-prebuilt": "^0.36.5",
     "extract-text-webpack-plugin": "^1.0.1",
     "gh-pages": "^0.8.0",
     "html-webpack-plugin": "^2.7.2",

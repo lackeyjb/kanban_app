@@ -43,7 +43,7 @@ const common = {
   ]
 };
 
-if(TARGET === 'start' || !TARGET) {
+if (TARGET === 'watch' || !TARGET) {
   module.exports = merge(common, {
     devtool: 'eval-source-map',
     devServer: {
@@ -73,7 +73,7 @@ if(TARGET === 'start' || !TARGET) {
   });
 }
 
-if(TARGET === 'build' || TARGET === 'stats') {
+if (TARGET === 'build' || TARGET === 'stats') {
   module.exports = merge(common, {
     entry: {
       app: PATHS.app,

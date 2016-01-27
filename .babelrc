@@ -5,7 +5,7 @@
     "survivejs-kanban"
   ],
   "env": {
-    "start": {
+    "watch": {
       "presets": [
         "react-hmre"
       ]
